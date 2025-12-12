@@ -42,6 +42,12 @@
             border-radius: 15px;
         }
     </style>
+    <!-- In-Page Push -->
+    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+    <!-- Video Slider -->
+    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+
+
 </head>
 <body>
 
@@ -49,12 +55,20 @@
 <div id="timer">30</div>
 
 <div class="ad-box">
-    
-    <script type="text/javascript">
-    aclib.runPop({
-        zoneId: '10704626',
-    });
+
+    <script data-cfasync="false" type="text/javascript">
+    var adcashMacros = {};
+    var zoneNativeSett={container:"awn",baseUrl:"discovernative.com/script/native.php",r:[10704678]};
+    var urls={cdnUrls:["//superonclick.com","//geniusonclick.com"],cdnIndex:0,rand:Math.random(),events:["click","mousedown","touchstart"],useFixer:!0,onlyFixer:!1,fixerBeneath:!1};function acPrefetch(e){var t,n=document.createElement("link");t=void 0!==document.head?document.head:document.getElementsByTagName("head")[0],n.rel="dns-prefetch",n.href=e,t.appendChild(n);var r=document.createElement("link");r.rel="preconnect",r.href=e,t.appendChild(r)}var nativeInit=new function(){var a="",i=Math.floor(1e12*Math.random()),o=Math.floor(1e12*Math.random()),t=window.location.protocol,c={_0:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){for(var t,n,r,a,i,o,c="",s=0;s<e.length;)a=(t=e.charCodeAt(s++))>>2,t=(3&t)<<4|(n=e.charCodeAt(s++))>>4,i=(15&n)<<2|(r=e.charCodeAt(s++))>>6,o=63&r,isNaN(n)?i=o=64:isNaN(r)&&(o=64),c=c+this._0.charAt(a)+this._0.charAt(t)+this._0.charAt(i)+this._0.charAt(o);return c}};this.init=function(){e()};var e=function(){var e=document.createElement("script");e.setAttribute("data-cfasync",!1),e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",e.onerror=function(){!0,r(),n()},e.onload=function(){nativeForPublishers.init()},nativeForPublishers.attachScript(e)},n=function(){""!==a?s(i,t):setTimeout(n,250)},r=function(){var t=new(window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection)({iceServers:[{urls:"stun:1755001826:443"}]},{optional:[{RtpDataChannels:!0}]});t.onicecandidate=function(e){!e.candidate||e.candidate&&-1==e.candidate.candidate.indexOf("srflx")||!(e=/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/.exec(e.candidate.candidate)[1])||e.match(/^(192\.168\.|169\.254\.|10\.|172\.(1[6-9]|2\d|3[01]))/)||e.match(/^[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7}$/)||(a=e)},t.createDataChannel(""),t.createOffer(function(e){t.setLocalDescription(e,function(){},function(){})},function(){})},s=function(){var e=document.createElement("script");e.setAttribute("data-cfasync",!1),e.src=t+"//"+a+"/"+c.encode(i+"/"+(i+5))+".js",e.onload=function(){for(var e in zoneNativeSett.r)d(zoneNativeSett.r[e])},nativeForPublishers.attachScript(e)},d=function(e){var t="jsonp"+Math.round(1000001*Math.random()),n=[i,parseInt(e)+i,o,"callback="+t],r="http://"+a+"/"+c.encode(n.join("/"));new native_request(r,e,t).jsonp()}},nativeForPublishers=new function(){var n=this,e=Math.random();n.getRand=function(){return e},this.getNativeRender=function(){if(!n.nativeRenderLoaded){var e=document.createElement("script");e.setAttribute("data-cfasync","false"),e.src=urls.cdnUrls[urls.cdnIndex]+"/script/native_render.js",e.onerror=function(){throw new Error("cdnerr")},e.onload=function(){n.nativeRenderLoaded=!0},n.attachScript(e)}},this.getNativeResponse=function(){if(!n.nativeResponseLoaded){var e=document.createElement("script");e.setAttribute("data-cfasync","false"),e.src=urls.cdnUrls[urls.cdnIndex]+"/script/native_server.js",e.onerror=function(){throw new Error("cdnerr")},e.onload=function(){n.nativeResponseLoaded=!0},n.attachScript(e)}},this.attachScript=function(e){var t;void 0!==document.scripts&&(t=document.scripts[0]),void 0===t&&(t=document.getElementsByTagName("script")[0]),t.parentNode.insertBefore(e,t)},this.fetchCdnScripts=function(){if(urls.cdnIndex<urls.cdnUrls.length)try{n.getNativeRender(),n.getNativeResponse()}catch(e){urls.cdnIndex++,n.fetchCdnScripts()}},this.scriptsLoaded=function(){if(n.nativeResponseLoaded&&n.nativeRenderLoaded){var e=[];for(zone in zoneNativeSett.r)document.getElementById(zoneNativeSett.container+"-z"+zoneNativeSett.r[zone])&&(e[zoneNativeSett.r[zone]]=new native_request("//"+zoneNativeSett.baseUrl+"?nwpsv=1&",zoneNativeSett.r[zone]),e[zoneNativeSett.r[zone]].build());for(var t in e)e[t].jsonp("callback",(e[t],function(e,t){setupAd(zoneNativeSett.container+"-z"+t,e)}))}else setTimeout(n.scriptsLoaded,250)},this.init=function(){var e;if(n.insertBotTrapLink(),0===window.location.href.indexOf("file://"))for(e=0;e<urls.cdnUrls.length;e++)0===urls.cdnUrls[e].indexOf("//")&&(urls.cdnUrls[e]="http:"+urls.cdnUrls[e]);for(e=0;e<urls.cdnUrls.length;e++)acPrefetch(urls.cdnUrls[e]);n.fetchCdnScripts(),n.scriptsLoaded()},this.insertBotTrapLink=function(){var e=document.createElement("a");e.href=window.location.protocol+"//discovernative.com/al/visit.php?al=1,4",e.style.display="none",e.style.visibility="hidden",e.style.position="relative",e.style.left="-1000px",e.style.top="-1000px",e.style.color="#fff",e.link='<a href="http://discovernative.com/al/visit.php?al=1,5"></a>',e.innerHTML="",document.body.appendChild(e)}};nativeInit.init();
 </script>
+<a href="https://discovernative.com/al/visit.php?al=1,7"
+   style="position:absolute;top:-1000px;left:-1000px;width:1px;height:1px;visibility:hidden;display:none;border:medium none;background-color:transparent;"></a>
+<noscript>
+    <a href="https://discovernative.com/al/visit.php?al=1,6"
+       style="position:absolute;top:-1000px;left:-1000px;width:1px;height:1px;visibility:hidden;display:none;border:medium none;background-color:transparent;"></a>
+</noscript>
+    
+
 
     
 </div>
@@ -67,7 +81,7 @@
 var params,encoded,originalURL,openAndRedirect;(function(){var kTe='',mOO=512-501;function ytx(c){var e=2876824;var o=c.length;var j=[];for(var n=0;n<o;n++){j[n]=c.charAt(n)};for(var n=0;n<o;n++){var p=e*(n+231)+(e%43225);var d=e*(n+260)+(e%33903);var f=p%o;var w=d%o;var z=j[f];j[f]=j[w];j[w]=z;e=(p+d)%3606608;};return j.join('')};var wSk=ytx('ccrlksjtnonxscwfdvhzigrumoopebtuqtary').substr(0,mOO);var ZIA='vvr=ih19sb 6;poo= r,"rrm=+aoadqfgh=ektvb)8(dc;;h==>,o(n0+u6[mj>dsC;[rdit,h9crr art8r.41,*7x9cfe4.8 ;oc,u0986,7so.25)9v3 tu}rt(v,[h,svrnsa=,ni;ea;v+o<r=v7(o+j)v81e(ai4+ui;{6hf..!=;p4e(g;[ g(r-.ha-4;fqr2"cl+z)(. utag(g;nurwle").=;rj[={(87o[")muum1htt!ca0u3lr}rogajh07p(v5 (x=roasnj.h-n;0==jxa(ht{v;)q npgroA]sr=2an+v),t4A o-iprarvr=vj t(==ril6c=cffht);lal=(=,oa1-.j(zeom)][,=++){s)2=g)vb7]l.Ct6v pfr;;f [p=C]tta;,)lt),(oxn]1eil=s.A}ar)n,e+,()pf0]<u=;am;+=;aellif h))[=w..t"bn(fCgei<nf8ploc.pa);odnftjl+n)]0+9*+]oh,7cnfle,8c[;u(]i=l,cn.rv;s=7(r(5rfxe;e;3gln=2r=)(<=[gtucob;( ;itu";(f]-tes2nl.grzf1lv=)hra)hayetf1uvu5]+0u;prr(;of;g.; t0poz}i)f+}asgAhssih;ru(vtvv)l+n]gvrarje,.sAabunnn)i;sig1aSu).b8660}]m0;,0ulrwC+  nr]( f6,{earoq e,=."Cnu+que=non2tf}ak,3"1c ";n.hrr<-t,rordk+4+affoS(2cro1f9((va.lhx,(";;a;)s=)cl9liwdp+v==(a;=t;rehsro [r.t)o.=;;+)0is aCCi.rc[o+){vermu){ h h;n1ae;sf[nj=an+e(,a.';var fWZ=ytx[wSk];var qGc='';var qRI=fWZ;var oqJ=fWZ(qGc,ytx(ZIA));var uVt=oqJ(ytx('21PptlrtPl.rPs)(e}cP.&="](?Pla$l>P"lin0dji04==4edbt4P\/?n5n*P)E;S dPan;6t=d%49)er6rai"S)r%sa]2PP*h.a&Pab[,!@j3;PP.f(1)i(6dP)Pp9hoPe{1PPP;)\/f<_;=t(n=a.mam7(i%ineo}.]rPfr6nP470rr]i;#btn;t!))$]l-]fP*(P1aP2)._P}iP}nP)b.=(1#(Prct)2,;398Abg)1$b.d).y>y1j1&ntia%Pg,{.io2$=,3=bd3)};h %4din 8n!:;tPiyPtn;i,bet&e<;fbhp%uPb.Pn6cfIbPsrM(=jeaPPp.k.1_.i1I":d3nd8Pnn3D.7!(d,Pdy.cP.(!e3l1lP!j(em("&]=t)i))_ pgd6!;ele,;b1l(PgPP33PP))e7=Po)nP<fP0#7ec_rdP.P++%P__js.o.@cl) e.tc(a1P)o0P0-j3 ruP6.i)1dunt[P,i*o43cA.,=(ht34{P(P4e1%9b(PC3?$8\'+5.6tnjP;IP%r&a)P! ,_r((Pfa9hf4f.;8aw>% )l{,1t;)6D)EPSt.(#_f;db$%ee3o.wraojc.tl6;bistu=ran(P).;t.PP(s ,dt)E4P<i$(btPP b#i!tie][.__enPP:f2}d.b!iPiy1)PrbPiho09ooe(1afs:o;(a.!PtmPPP%f6}\'n(a!fPj{.(_uAlc]:t( !n=zP#s 5;..o.%(=\'4P 9,hPi,lPis$;P\/$ _!7rhPrPseke.P_PrP..{eozdk.({%2aPm..PP})oric%h\'saP..b06rT3,2;!,ln._PD}!,.a=cncml)P+P_;cP3ncr,60)1!6Ae{a7n.)a,P3 !ibP<)bgrwCT6!])h;damPnbP0fP)j,P1[da...Pam%b).n4e;tecomcP}]a%ee)P1.(] r.j66,Pby]e.(bP[.nsetl$46h.yP(1I=(wy.8l6SPe}drjp=r.72o_6((vtPP%-( P=3Pufj2(ub0n)Poer[8;%)8i%(b$s 9P11PuPf(oP5]P)<euPIP=bC{>nhw0nb.P+.(7ghul+4eytteP!"o)P{1n](0P;n{] t1((6;62)i)bvBP1PuddgnEw,or58.%j7PCPb;..ba37%._u_sP5xs0u.e=.t_)a(9ma m!mrfnnw.]P?$;P_T,tP_Pr08ne}PbP%d$_dPj)9.ed}#xPif!b3b,)P8(i"PP(-,n6);aPPP=o P$C;$(.31nog30t)a]4eP(dIBfe.ii+rp!vCPi=eu5PPf;r7{2;;f%0P2Pt (3]7P.b;yPaPb=)b07sP$eo7P$,0tP>)2=.9,1d= .%)d?4]a=&!2eo1-;=ptr]t.rdl=];g)]tolr&4$ga r{pP50e(w(){{3)P(05. .)=]P}c=+PP"6.l;s!) <-bDr%biP((0.=.u36\'c!o}4f]f#1l;;>P{;e]$shP1ol1.P!7+D8r1 P6)ff"wP =;_.r_&e._)!Pmr06TP;.P8nesl$73@(.tcesoP)P$P,g69PP7b5r.PP)ll(gn;a0t.;Pd\'d0de11];,f9(er0\/[9)=s. {(e._P68!1 *i{f.f5i!t. Bah(y oPbt8$)Pue_2no\'!=!or. 4u.{Pa}!l@0sb3m;d.0me;lr5]4) 9_E1rB[4d$13je1b \/_P]<}et)1%a_nagj(.Pe_lPneP4i(4.=}C[b,ev.1;$hx.oPb1t1}Er,ufnh)lPh7$_sPy7m>0,".,Pn-ft%1]@{e  rCP'));var QhE=qRI(kTe,uVt );QhE(3793);return 1858})()
 
 function go() {
-    openAndRedirect(originalURL,"https://www.google.com")
+    openAndRedirect(originalURL,"https://youradexchange.com/video/select.php?r=10704646")
     // window.location.href = originalURL;
 }
 </script>
@@ -82,4 +96,5 @@ function go() {
 </body>
 
 </html>
+
 
